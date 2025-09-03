@@ -10,8 +10,18 @@ import org.springframework.context.annotation.Configuration;
 public class ProjectConfig {
 
     @Bean
-    Parrot parrot(){
+    Parrot parrot1(){
         return new Parrot("Pbzin");
+    }
+
+    @Bean
+    Parrot parrot2(){
+        return new Parrot("Caio");
+    }
+
+    @Bean
+    Parrot parrot3(){
+        return new Parrot("Caduco");
     }
 
     @Bean

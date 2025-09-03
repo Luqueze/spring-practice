@@ -10,8 +10,14 @@ public class PracticeApplication {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
-        Parrot p = context.getBean(Parrot.class);
-        System.out.println(p.name());
+        Parrot p1 = context.getBean("parrot1",Parrot.class);
+        System.out.println(p1.name());
+
+        Parrot p2 = context.getBean("parrot2",Parrot.class);
+        System.out.println(p2.name());
+
+        Parrot p3 = context.getBean("parrot3",Parrot.class);
+        System.out.println(p3.name());
 
         String s = context.getBean(String.class);
         System.out.println(s);
