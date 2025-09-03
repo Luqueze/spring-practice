@@ -15,6 +15,7 @@ public class ProjectConfig {
     }
 
     @Bean
+    @Primary
     Parrot parrot2(){
         return new Parrot("Caio");
     }
