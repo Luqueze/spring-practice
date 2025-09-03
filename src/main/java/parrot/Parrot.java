@@ -1,5 +1,3 @@
 package parrot;
 
-public class Parrot {
-    private String name;
-}
+public record Parrot(String name){}
